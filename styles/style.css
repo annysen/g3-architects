@@ -11,7 +11,7 @@
 }
 
 .body-section {
-    padding: 50px 250px 50px 250px;
+    padding: 50px 200px 50px 200px;
 }
 
 .btn-primary {
@@ -111,7 +111,7 @@
     width: 100%;
 }
 
-.feature-uptext h1 {
+.feature-up-text h1 {
     font-weight: 700;
     font-size: 45px;
 }
@@ -127,16 +127,78 @@
     font-weight: 700;
 }
 
-.feature-uptext p {
+.feature-up-text p {
     color: #727272;
     font-size: 14px;
     margin: 24px 0;
 }
 
+/* feature down style  */
+
+.feature-down {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-down-text-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.feature-down-text-description {
+    font-size: 16px;
+    color: #727272;
+    margin-top: 25px;
+}
+
+.feature-down-text-box {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px 42px 30px 30px;
+    margin-top: 20px;
+}
+
+.text-box-title {
+    font-weight: 600;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.text-box-description {
+    font-size: 16px;
+    color: #727272;
+    line-height: 26px;
+}
+
+.feature-down-img {
+    width: 100%;
+}
+
+.btn-large {
+    margin-top: -100px;
+    margin-left: -80px;
+}
+
+.btn-large-text {
+    font-weight: 700;
+    font-size: 65px;
+}
+
+
+
 /* responsiv style  */
 @media only screen and (max-width:576px) {
 
     /* header section  */
+    .header-container {
+        height: auto;
+    }
+
     .nav-container,
     .nav-items {
         flex-direction: column;
@@ -148,11 +210,13 @@
     .body-section {
         width: 100%;
         padding: 0;
+        margin-top: 30px;
     }
 
     .header-title,
     .nav-name,
-    .feature-uptext>h1 {
+    .feature-up-text>h1,
+    .btn-large-text {
         font-size: 10vw;
     }
 
@@ -164,10 +228,33 @@
 
     /* feature up  */
     .feature-up,
-    .feature-up-img-section {
+    .feature-up-img-section,
+    .feature-down {
         grid-template-columns: repeat(1, 1fr);
         padding: 10px;
+        margin-bottom: 20px;
     }
 
+    /* .feature-up{} */
+
+    /* feature down  */
+    .feature-down {
+        gap: 30px;
+    }
+
+    .feature-down-img-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-down-img {
+        margin-bottom: 25px;
+    }
+
+    .btn-large {
+        margin: 0;
+    }
 
 }
