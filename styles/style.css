@@ -267,6 +267,15 @@
     justify-content: space-around;
 }
 
+/* footer  */
+footer {
+    background-color: #FFF4E7;
+    color: #424242;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*-------------------------------- 
 ----------responsiv style---------  
@@ -350,6 +359,10 @@
     }
 
     /* sponsors style  */
+    .Sponspors-container {
+        margin-bottom: 30px;
+    }
+
     .sponsors-img {
         flex-direction: column;
         align-items: center;
@@ -358,6 +371,13 @@
 
     .sponsors-img>img {
         width: 150px;
+    }
+
+    /* footer  */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
     }
 
 }
