@@ -88,3 +88,31 @@
     width: 100%;
     margin-top: 50px;
 }
+
+
+/* responsiv style  */
+@media only screen and (max-width:576px) {
+
+    /* header section  */
+    .nav-container,
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .header-title-container,
+    .header-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .header-title,
+    .nav-name {
+        font-size: 10vw;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+}
