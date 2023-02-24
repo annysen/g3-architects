@@ -189,9 +189,89 @@
     font-size: 65px;
 }
 
+/* fact section style  */
+
+.fact-container {
+    margin-top: 130px;
+    margin-bottom: 180px;
+}
+
+.fact-container-title {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.fact-container-description {
+    font-size: 16px;
+    color: #727272;
+    margin-top: 25px;
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 125px;
+    margin-top: 100px;
+    margin-bottom: 180px;
+    justify-items: center;
+}
+
+.fact-box {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    /* padding: 45px 35px; */
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-box img {
+    width: 45.22px;
+    height: 45.22px;
+}
+
+.fact-box h3 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+}
+
+.fact-box p {
+    font-size: 20px;
+    color: #727272;
+}
+
+/* Sponspor style  */
+
+.Sponspors-container {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.Sponspors-title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.Sponspors-description {
+    font-size: 16px;
+    color: #727272;
+    margin: 24px 0 50px 0;
+}
+
+.sponsors-img {
+    display: flex;
+    justify-content: space-around;
+}
 
 
-/* responsiv style  */
+/*-------------------------------- 
+----------responsiv style---------  
+---------------------------------*/
+
 @media only screen and (max-width:576px) {
 
     /* header section  */
@@ -216,7 +296,8 @@
     .header-title,
     .nav-name,
     .feature-up-text>h1,
-    .btn-large-text {
+    .btn-large-text,
+    .feature-down-text-title {
         font-size: 10vw;
     }
 
@@ -229,16 +310,16 @@
     /* feature up  */
     .feature-up,
     .feature-up-img-section,
-    .feature-down {
+    .feature-down,
+    .facts {
         grid-template-columns: repeat(1, 1fr);
         padding: 10px;
         margin-bottom: 20px;
     }
 
-    /* .feature-up{} */
-
     /* feature down  */
-    .feature-down {
+    .feature-down,
+    .facts {
         gap: 30px;
     }
 
@@ -255,6 +336,28 @@
 
     .btn-large {
         margin: 0;
+    }
+
+    /* facts  */
+    .fact-container {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .facts {
+        margin-top: 20px;
+    }
+
+    /* sponsors style  */
+    .sponsors-img {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sponsors-img>img {
+        width: 150px;
     }
 
 }
